@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { staggerContainer, slideIn, textVariant } from "../utils/motion";
+import { staggerContainer, slideIn, textVariant } from "../../utils/motion";
 function Hero() {
   return (
     <motion.div

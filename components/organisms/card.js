@@ -4,9 +4,9 @@ export default function ImgMediaCard({ children }) {
   return (
     <div
       style={{
-        width: "20rem",
+        width: "60%",
         height: "auto",
-        borderRadius: "1.1rem",
+        borderRadius: "1.8rem",
         background:
           "linear-gradient(132.32deg, #23AE78 3.51%, rgba(184, 255, 1, 0) 101.96%)",
         display: "flex",

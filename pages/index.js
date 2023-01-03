@@ -4,13 +4,12 @@ import { Inter } from "@next/font/google";
 import { useSelector, useDispatch } from "react-redux";
 import { decrement, increment, valueSelector } from "../slices/counterSlice";
 
-import HomeAppBar from "../organisms/app_bar";
-import Loading from "../organisms/loading";
-import Hero from "../organisms/hero";
-import CardGrid from "../organisms/card_grid";
+import TransformationSection from "../components/sections/transformation_section";
 
-import { motion } from "framer-motion";
-import { textVariant2 } from "../utils/motion";
+import HomeAppBar from "../components/organisms/app_bar";
+// import Loading from "../organisms/loading";
+import Hero from "../components/organisms/hero";
+import CardGrid from "../components/organisms/card_grid";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,38 +26,18 @@ export default function Home() {
       </Head>
 
       <div
+        className="flex flex-col "
         style={{
-          height: "auto",
-          display: "flex",
-          flexDirection: "column",
-          position: "relative",
           background:
             "radial-gradient(circle at -1% 57.5%, #0a231d 0%, #0a231d 90%)",
         }}
       >
-        <div
-          style={{
-            background:
-              "radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255,0.4) 60%)",
-            position: "absolute",
-            height: "100%",
-            width: "100%",
-            filter: "blur(9rem)",
-          }}
-        />
         <HomeAppBar />
         <Hero />
         {/* <Loading /> */}
-        <div>
-          <motion.h2
-            variants={textVariant2}
-            initial={"hidden"}
-            whileInView={"show"}
-            className=" text-7xl text-white font-bold font-Saira p-7"
-          >
-            Our services
-          </motion.h2>
-        </div>
+
+        <TransformationSection />
+
         <CardGrid />
       </div>
     </>
