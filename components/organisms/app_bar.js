@@ -33,17 +33,18 @@ export default function HomeAppBar() {
         }}
       >
         <h1
-          style={{
-            fontFamily: "Saira",
-            fontWeight: 600,
-            fontSize: "1.2rem",
-            color: "white",
-          }}
+          className="text-secondry font-Saira font-bold text-2xl"
+          // style={{
+          //   fontFamily: "Saira",
+          //   fontWeight: 600,
+          //   fontSize: "1.2rem",
+          //   color: "white",
+          // }}
         >
           TT
         </h1>
         <svg
-          style={{ color: "#fff", width: "2rem" }}
+          className="text-secondry w-8"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"

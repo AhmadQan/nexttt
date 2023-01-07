@@ -17,11 +17,7 @@ export default function ImgMediaCard({ children }) {
         boxShadow: "0px 18.8004px 33.8407px rgba(0, 0, 0, 0.45) ",
       }}
     >
-      <h1
-        style={{ fontWeight: "bold", fontSize: "1.8rem", fontFamily: "Saira" }}
-      >
-        personal workout plan
-      </h1>
+      <h1 className="font-bold text-lg font-Saira">personal workout plan</h1>
       <div style={{ height: "100%" }}>{children}</div>
 
       <div

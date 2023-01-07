@@ -35,9 +35,11 @@ function TransformationSection() {
       />
       <Blurdiv />
       <HeaderText>Our Transformation</HeaderText>
-      <TransItem />
-      <TransItem />
-      <TransItem />
+      <div className="flex flex-col gap-5">
+        <TransItem />
+        <TransItem />
+        <TransItem />
+      </div>
     </section>
   );
 }

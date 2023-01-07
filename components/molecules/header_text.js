@@ -8,7 +8,7 @@ function HeaderText({ children }) {
       variants={textVariant2}
       initial={"hidden"}
       whileInView={"show"}
-      className=" text-4xl text-white font-bold font-Saira pt-16 pb-7"
+      className=" text-4xl text-secondry font-bold font-Saira pt-16 pb-12"
     >
       {children}
     </motion.h2>

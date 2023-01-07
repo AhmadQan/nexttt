@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { decrement, increment, valueSelector } from "../slices/counterSlice";
 
 import TransformationSection from "../components/sections/transformation_section";
+import ServicesSection from "../components/sections/servicesSection";
 
 import HomeAppBar from "../components/organisms/app_bar";
 // import Loading from "../organisms/loading";
@@ -26,19 +27,20 @@ export default function Home() {
       </Head>
 
       <div
-        className="flex flex-col "
-        style={{
-          background:
-            "radial-gradient(circle at -1% 57.5%, #0a231d 0%, #0a231d 90%)",
-        }}
+        className="flex flex-col bg-primary"
+        // style={{
+        //   background:
+        //     "radial-gradient(circle at -1% 57.5%, #0a231d 0%, #0a231d 90%)",
+        // }}
       >
         <HomeAppBar />
         <Hero />
         {/* <Loading /> */}
 
         <TransformationSection />
+        <ServicesSection />
 
-        <CardGrid />
+        {/* <CardGrid /> */}
       </div>
     </>
   );

@@ -23,7 +23,13 @@ function TransItem() {
       whileInView={"show"}
       className="flex flex-col pb-11"
     >
-      <h2 className="text-white text-2xl font-semibold pb-4">Client Name</h2>
+      <div className="pb-4 flex flex-col gap-1">
+        <h2 className="text-accent text-xl font-bold ">Client Name</h2>
+        <div className="flex justify-between text-secondry ">
+          <p className=" text-sm font-normal">6 month </p>
+          <p className=" text-sm font-normal">TiTi weight loss program</p>
+        </div>
+      </div>
       <div className="flex justify-between gap-5">
         <motion.button
           animate={isExtanded ? "open" : "closed"}
@@ -85,18 +91,18 @@ function TransItem() {
         </motion.button>
 
         {!isExtanded && (
-          <div className="w-1/2 flex flex-col justify-between">
+          <div className="w-1/2 flex flex-col justify-center">
             {/* <button
             className="text-2xl  text-white font-Saira font-normal text-left "
             onClick={handleExpend}
           >
             Client name
           </button> */}
-            <p className="text-white text-lg font-normal">
-              TiTi weight loss program
+            <p className="text-accent text-base font-normal">
+              TiTi weight loss program made me relaise how much wrong
+              information i had about diet and workout i relised it is not that
+              hard to maintain a helthy diet and still enjoy you meals
             </p>
-            <p className="text-white text-lg font-normal">6 month training</p>
-            <p className="text-white text-lg font-normal">21 years</p>
           </div>
         )}
       </div>
