@@ -8,14 +8,11 @@ import Banner from "../molecules/banner";
 
 export default function ServicesSection() {
   return (
-    <div>
-      <Image
-        width={"100"}
-        height={"100"}
-        alt="me"
-        src={"/assets/static/imgs/SVBG.png"}
-        className="w-full h-full absolute "
-      ></Image>
+    <div
+      style={{
+        background: `url(/assets/static/imgs/SVBG.png)`,
+      }}
+    >
       <section>
         <HeaderText>Our services</HeaderText>
         <div className="flex flex-col items-center gap-9">
